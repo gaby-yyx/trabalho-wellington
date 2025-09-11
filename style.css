@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; 
+    color: #ffffff; 
+    line-height: 1.6;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://via.placeholder.com/1920x1080/8B0000/FFFFFF?text=Fundo+rock') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        background-color: #000000;
+        transform: scale(1);
+    }
+    to {
+        background-color: #330000;
+        transform: scale(1.03);
+    }
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border: 2px solid #8B0000; 
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero h1 {
+    font-size: 4em;
+    color: #8B0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-style: italic;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.biography {
+    background-color: #111111;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.biography h2 {
+    font-size: 2.5em;
+    color: #8B0000;
+    border-bottom: 2px solid #8B0000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.biography p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border: 3px solid #8B0000;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+
+.quote-section {
+    margin-top: 40px;
+}
+
+.quote-box {
+    background-color: #8B0000;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    transition: background-color 0.5s ease;
+    animation: bounceIn 2s;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    80% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.quote-box:hover {
+    background-color: #660000;
+}
+
+blockquote p {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #ffffff;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin-top: 40px;
+    border-top: 2px solid #8B0000;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .biography h2 {
+        font-size: 2em;
+    }
+
+    blockquote p {
+        font-size: 1.2em;
+    }
+}
