@@ -13,7 +13,7 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
 
 .hero-content {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px 40px;
+    padding: 10px 10px;
     border: 2px solid #8B0000; 
     animation: slideIn 2s ease-out;
 }
@@ -74,7 +74,7 @@ body {
 
 .biography {
     background-color: #111111;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 3s ease-out;
@@ -99,7 +99,7 @@ body {
 }
 
 .main-image {
-    width: 100%;
+    width: 40%;
     height: auto;
     border: 3px solid #8B0000;
     margin-bottom: 20px;
@@ -151,7 +151,6 @@ blockquote p {
     border-top: 2px solid #8B0000;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5em;
@@ -168,4 +167,8 @@ blockquote p {
     blockquote p {
         font-size: 1.2em;
     }
+}
+strong{
+    color: #bb1616;
+    font-size: 18px;
 }
